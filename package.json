@@ -3,6 +3,7 @@
   "description": "Bloomreach SPA SDK",
   "name": "spa-sdk-workspace",
   "type": "module",
+  "version": "22.0.0",
   "keywords": [
     "bloomreach",
     "spa",
