@@ -306,6 +306,7 @@ export class PageImpl implements Page {
   getContent<T>(reference: Reference | string): T | undefined;
 
   getContent(reference: Reference | string): unknown | undefined {
+    console.trace('getContent reference', reference);
     const model = resolve<ContentModel>(
       this.model,
       isReference(reference) ? reference : { $ref: `/page/${reference}` },
